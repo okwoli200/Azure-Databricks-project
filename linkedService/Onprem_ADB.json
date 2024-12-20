@@ -1,0 +1,27 @@
+{
+	"name": "Onprem_ADB",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "EMMANUEL\\EMMAMDX",
+			"database": "AdventureWorksLT2017",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "Tesca",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "onPremPassword"
+			}
+		},
+		"connectVia": {
+			"referenceName": "SHDBT",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
