@@ -6,7 +6,7 @@
 		"pipelines": [
 			{
 				"pipelineReference": {
-					"referenceName": "DL_to_EDW",
+					"referenceName": "DL_to_EDW2",
 					"type": "PipelineReference"
 				},
 				"parameters": {
