@@ -3,18 +3,7 @@
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Started",
-		"pipelines": [
-			{
-				"pipelineReference": {
-					"referenceName": "DL_to_EDW2",
-					"type": "PipelineReference"
-				},
-				"parameters": {
-					"folder": "@triggerBody().folderPath",
-					"fileName": "@triggerBody().fileName"
-				}
-			}
-		],
+		"pipelines": [],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
 			"blobPathBeginsWith": "/fact/blobs/live",
