@@ -140,6 +140,33 @@
 					"referenceName": "AzureDatabricks1",
 					"type": "LinkedServiceReference"
 				}
+			},
+			{
+				"name": "silver_to_Gold",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "broze to silver",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/okwoli3100@gmail.com/Silver to Gold 2025-01-10 12:53:58"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks1",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": []
