@@ -17,6 +17,9 @@
 		"ADLS_Link_properties_typeProperties_url": {
 			"value": "https://kenyo20240803.dfs.core.windows.net/"
 		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "1223-172646-zkdoruc"
+		},
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"value": "https://kenyoDBT.vault.azure.net/"
 		},
