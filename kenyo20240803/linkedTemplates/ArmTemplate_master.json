@@ -25,7 +25,7 @@
 		},
 		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
 			"type": "string",
-			"defaultValue": "1223-172646-zkdoruc"
+			"defaultValue": "0110-192955-732nnnnj"
 		},
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"type": "string",
