@@ -134,34 +134,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/okwoli3100@gmail.com/Azure-Databricks-project/Broze_to_Silver_2024-12-24 09_54_19"
-				},
-				"linkedServiceName": {
-					"referenceName": "AzureDatabricks1",
-					"type": "LinkedServiceReference"
-				}
-			},
-			{
-				"name": "Silver to Gold",
-				"type": "DatabricksNotebook",
-				"dependsOn": [
-					{
-						"activity": "broze to silver",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"policy": {
-					"timeout": "0.12:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"notebookPath": "/Users/okwoli3100@gmail.com/Azure-Databricks-project/Silver_to_gold 2025-01-06 11_15_29"
+					"notebookPath": "/Users/okwoli3100@gmail.com/bronze to silver 2025-01-10 12:40:25"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks1",
